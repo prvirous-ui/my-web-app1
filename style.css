@@ -1,0 +1,176 @@
+/* استایل‌های کلی */
+body {
+    font-family: 'Vazir', 'Tanha', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* هدر و ناوبری */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* کارت‌ها */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* دکمه‌ها */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* پیشرفت‌بار */
+.progress {
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* لیست‌ها */
+.list-group-item {
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* تقویم */
+.calendar-day {
+    transition: background-color 0.2s ease;
+}
+
+.calendar-day:hover {
+    background-color: #e9ecef;
+}
+
+.today {
+    background-color: #e3f2fd;
+}
+
+/* نمایش برنامه‌های مطالعه */
+.study-plan {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.study-plan.book {
+    background-color: #d1ecf1;
+    border-left: 3px solid #0dcaf0;
+    color: #055160;
+}
+
+.study-plan.course {
+    background-color: #d4edda;
+    border-left: 3px solid #198754;
+    color: #0f5132;
+}
+
+/* صفحه‌بندی */
+.pagination {
+    justify-content: center;
+}
+
+/* صفحه لاگین */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* صفحه اصلی */
+.hero-section {
+    background: linear-gradient(135deg, #007bff 0%, #6610f2 100%);
+    color: white;
+    padding: 80px 0;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* صفحه پروفایل */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* صفحه مدیریت کارها */
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* واکنش‌گرایی */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .feature-card {
+        padding: 20px 15px;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
